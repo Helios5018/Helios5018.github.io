@@ -1,103 +1,92 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>The love letter for Claire</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
+    <title>The love letter for Jane</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* There is a code love letter for Claire.</span><br />
-				<span class="space"/><span class="comments">* I can not write it well as a poet .</span><br />
-				<span class="space"/><span class="comments">* I can not code it well as a programmer .</span><br />
-				<span class="space"/><span class="comments">* But it take my painstaking effort to complete it. </span><br />
-				<span class="space"/><span class="comments">* I hope you will like it. </span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Helios"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Claire"</span>);<br />
-				<span class="comments">// Sept 2, 2019, we were in love. </span><br />
-				<span class="comments">// It is my best day of my life. </span><br />
-				love(u, i);<br />
-				<span class="comments">// we talked, went to travel, miss each other.</span><br />
-				<span class="comments">// We have lots of happy times.</span><br />
-				happy(u, i);<br />
-				<span class="comments">// But, i will be a bad boy sometimes.</span><br />
-				<span class="comments">// I can not understand you well, and not care your feelings.</span><br />
-				<span class="comments">// I make you unhappy.</span><br />
-				i.makeUnhappy(u);<br />
-				<span class="comments">// So i make a function here.</span><br />
-				<span class="comments">// It can make the bad boy became a good boy.</span><br />
-				<span class="comments">// Let the boy understand you and care you forever.</span><br />
-				def transform(x);<br />
-				if x = bad boy;<br />
-				then <span class="keyword">forever</span> x = good boy;<br />
-				<span class="comments">// The transformation is not a magic.</span><br />
-				<span class="comments">// It is a change of thought and attitude after seriously think.</span><br />
-				transform(i);<br />
-				<span class="comments">// I will give you happy life, i promise.</span><br />
-				<span class="comments">// We will have best happy times forever.</span><br />
-				<span class="keyword">forever</span> happy(u, i);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						We have been in love for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						I love you forever.<br/>
-						<div class="signature">- Helios</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2019, 9, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">I never hoped,aspired,dreamed that </span><br />
+                <span class="space"/><span class="comments">one could find everything one wanted in one person</span><br />
+                <span class="space"/><span class="comments">I was not such an idiot as to believe this was possible</span><br />
+                <span class="space"/><span class="comments"> </span><br />
+                <span class="space"/><span class="comments">Yet in you,I found everything I want</span><br />
+                <span class="space"/><span class="comments">You are beautiful, gay, giving, gentle </span><br />
+                <span class="space"/><span class="comments">and wonderfully intelligent and wonderfully silly as well </span><br />
+                <span class="space"/><span class="comments"> </span><br />
+                <span class="space"/><span class="comments">I was nothing else in this life than to be with you </span><br />
+                <span class="space"/><span class="comments">to listen and watch you, your beautiful voice your beauty </span><br />
+                <span class="space"/><span class="comments">to argue with you, to laugh with you </span><br />
+                <span class="space"/><span class="comments">to show your things and share things with you </span><br />
+                <span class="space"/><span class="comments">to explore your magnificent mind </span><br />
+                <span class="space"/><span class="comments">to explore your wonderful body </span><br />
+                <span class="space"/><span class="comments">to help you,protect you </span><br />
+                <span class="space"/><span class="comments"> </span><br />
+                <span class="space"/><span class="comments">to spend all of our rest life </span><br />
+                <span class="comments">**/</span><br />
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        We have been in love for
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        love you <br/>
+                        <div class="signature">- Helios</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2021, 9, 24);
+        together.setHours(0);
+        together.setMinutes(0);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                startHeartAnimation();
+            }, 5000);
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
+
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
 </body>
 </html>
